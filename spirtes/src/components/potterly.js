@@ -1,5 +1,5 @@
 import React from 'react';
-import PotterlyImage from '../static/potterly.png'
+import PotterlyImage from '../assets/images/potterly.png'
 
 class Potterly extends React.Component {
   constructor(props){

@@ -9,14 +9,31 @@ import Coding from './components/coding.js'
 import About from './components/about.js'
 
 
+
+class Page extends React.Component {
+  componentDidMount() {
+    document.title = this.props.title
+  }
+  render() {
+    const PageComponent = this.props.component
+    return (
+      <PageComponent />
+    )
+  }
+}
+
 const routing = (
   <Router>
     <div>
-      <Route path="/" component={App} />
-      <Route exact path="/" component={Home} />
-      <Route path="/ceramics" component={Ceramics} />
-      <Route path="/about" component={About} />
-      <Route path="/coding" component={Coding} />
+      <Route path="/" render={props => ( <Page {...props} component={App}/>)}/>
+      <Route exact path="/" render={props =>
+        ( <Page {...props} component={Home} title="Home – Lex Spirtes"/>)}/>
+      <Route path="/ceramics" render={props =>
+        ( <Page {...props} component={Ceramics} title="Ceramics – Lex Spirtes"/>)} />
+      <Route path="/about" render={props =>
+        ( <Page {...props} component={About} title="About – Lex Spirtes"/>)}/>
+      <Route path="/coding" render={props =>
+        ( <Page {...props} component={Coding} title="Coding – Lex Spirtes"/>)} />
 
     </div>
   </Router>

@@ -80,6 +80,21 @@ h3 {
   margin-left: 2%;
 }
 
+/*pots page */
+
+.CeramicsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10%
+}
+
+.potImage {
+  width: 30%;
+  padding: 4px;
+}
+
 /* font imports */
 
 

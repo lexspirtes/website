@@ -4,6 +4,7 @@ import Home from './components/home.js'
 import './css/styles.css'
 import { NavLink } from 'react-router-dom'
 import Lex from './assets/images/lex3.png'
+
 class App extends React.Component {
 render() {
   return (

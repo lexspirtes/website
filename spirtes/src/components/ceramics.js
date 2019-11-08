@@ -1,6 +1,11 @@
 import React from 'react';
-import Ashtrays from '../assets/images/ashtrays.png'
+import ceramic from '../assets/images/pots/lex-pottery-3.jpg'
 
+
+function importAll(r) {
+  return r.keys().map(r);
+}
+const images = importAll(require.context('../assets/images/pots', false, /\.(png|jpe?g|svg)$/))
 
 class Ceramics extends React.Component {
   constructor(props){
@@ -12,14 +17,15 @@ class Ceramics extends React.Component {
   componentDidMount(){
 }
 
+//       { images.forEach(function(element) {
+//          <img src={element}/> })
+//        }
+
 
   render() {
     return (
-        <div className="AshtrayDiv">
-          <img className="AshtrayImage"
-               src={Ashtrays}
-               alt="ashtrays"
-          />
+        <div className="CeramicsDiv">
+        { images.map(x => <img className="potImage" src={x} />) }
         </div>
     );
   }
