@@ -1,5 +1,5 @@
 import React from 'react';
-import Ashtrays from '../static/ashtrays.png'
+import Ashtrays from '../assets/images/ashtrays.png'
 
 
 class Home extends React.Component {

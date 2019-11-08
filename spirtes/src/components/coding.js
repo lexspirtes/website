@@ -1,5 +1,6 @@
 import React from 'react';
-import Ashtrays from '../static/ashtrays.png'
+import Ashtrays from '../assets/images/ashtrays.png'
+import Potterly from './potterly.js'
 
 
 class Coding extends React.Component {
@@ -16,10 +17,7 @@ class Coding extends React.Component {
   render() {
     return (
         <div className="AshtrayDiv">
-          <img className="AshtrayImage"
-               src={Ashtrays}
-               alt="ashtrays"
-          />
+        < Potterly/>
         </div>
     );
   }

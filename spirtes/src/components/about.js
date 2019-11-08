@@ -1,5 +1,5 @@
 import React from 'react';
-import Ashtrays from '../static/ashtrays.png'
+import Me from '../assets/images/me.png'
 
 
 class About extends React.Component {
@@ -15,11 +15,15 @@ class About extends React.Component {
 
   render() {
     return (
-        <div className="AshtrayDiv">
-          <img className="AshtrayImage"
-               src={Ashtrays}
-               alt="ashtrays"
+        <div className="AboutDiv">
+          <img className="MeDiv"
+               src={Me}
+               alt="lex"
           />
+          <div className="aboutInfo">
+            <h2 id="aboutName">Lex Spirtes</h2>
+            <p id="aboutDetails">She is a full-stack engineer, ceramicist, and queer woman.</p>
+          </div>
         </div>
     );
   }

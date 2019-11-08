@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
@@ -14,7 +13,7 @@ const routing = (
   <Router>
     <div>
       <Route path="/" component={App} />
-      <Route exact path="/" component={Coding} />
+      <Route exact path="/" component={Home} />
       <Route path="/ceramics" component={Ceramics} />
       <Route path="/about" component={About} />
       <Route path="/coding" component={Coding} />
